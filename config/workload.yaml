@@ -16,4 +16,4 @@ spec:
       url: ssh://git@github.com/trevorputbrese/tanzu-java-web-app.git
       ref:
         branch: main
-  gitops_ssh_secret: git-ssh
+gitops_ssh_secret: git-ssh
