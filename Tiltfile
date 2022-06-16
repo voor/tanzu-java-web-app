@@ -1,7 +1,7 @@
 SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default=' registry.tkgharbor.com/supply-chain-images/images/tanzu-java-web-app-source')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
-allow_k8s_contexts('tap-aws-ue2-dev-cluster-1')
+allow_k8s_contexts('minikube')
 k8s_custom_deploy(
     'tanzu-java-web-app',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --live-update" +
